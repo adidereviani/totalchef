@@ -3,7 +3,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 app = Flask(__name__)
 app.secret_key = 'your_secret_key'  # Ensure the secret key is set for session handling
 
-# Default language is English
+# Default language is Hebrew ('he')
 DEFAULT_LANGUAGE = 'he'
 
 # Helper function to get the current language
@@ -20,9 +20,13 @@ def switch_language(lang):
 @app.route('/')
 def home():
     lang = get_language()
-    return render_template(f'index_{lang}.html')
+    # Handle the Hebrew index file separately
+    if lang == 'he':
+        return render_template('index.html')  # Use the new index.html file for Hebrew
+    else:
+        return render_template(f'index_{lang}.html')  # Keep using index_en.html for English
 
-# Other routes
+# Other routes with dynamic language support
 @app.route('/products')
 def products():
     lang = get_language()
