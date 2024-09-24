@@ -1,8 +1,41 @@
 {% extends "base.html" %}
 
-{% block title %}ברוכים הבאים לטוטאל שף{% endblock %}
+{% block title %}דף הבית - טוטאל שף{% endblock %}
 
 {% block content %}
-    <h2>סלטים טעימים</h2>
-    <p>גלו את הסלטים הטריים ביותר, עשויים באהבה ותשוקה!</p>
+    <!-- Main Image Section -->
+    <div class="home-main-image">
+        <img src="static/images/0G9A0138.jpg" alt="Main Image">
+    </div>
+
+    <!-- Best-Selling Salads Section -->
+    <section class="best-selling">
+        <h2>הסלטים הנמכרים ביותר</h2>
+        <div class="salad-gallery">
+            <div class="salad-item">
+                <img src="static/images/salad1.jpg" alt="Salad 1">
+                <p>סלט חצילים בטחינה</p>
+            </div>
+            <div class="salad-item">
+                <img src="static/images/salad2.jpg" alt="Salad 2">
+                <p>סלט טבולה</p>
+            </div>
+            <div class="salad-item">
+                <img src="static/images/salad3.jpg" alt="Salad 3">
+                <p>סלט גזר מרוקאי</p>
+            </div>
+            <!-- Add more salad items as needed -->
+        </div>
+    </section>
+
+    <!-- 4 Facts About Total Chef -->
+    <section class="facts-about-total-chef">
+        <h2>4 עובדות שאולי לא ידעתם על טוטאל שף</h2>
+        <ol>
+            <li>איך בחרתי את השם טוטאל שף? אז מעבר לכך שאני טוטאלית בכל מה שאני עושה, השם באנגלית מורכב מהשמות של שני ילדיי הבכורים תומר וטלי. כשחשבנו על השם, הילי הקטנה עוד לא נולדה.</li>
+            <li>הדמות בלוגו היא אני.</li>
+            <li>אבי, נתן, אחראי על כל המיתוג של הסלטים.</li>
+            <li>בכל חג ישנם מבצעים מיוחדים שלא ניתן להשיג לאורך כל השנה.</li>
+        </ol>
+    </section>
 {% endblock %}

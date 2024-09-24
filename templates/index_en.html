@@ -1,8 +1,41 @@
 {% extends "base.html" %}
 
-{% block title %}Welcome to Total Chef{% endblock %}
+{% block title %}Home - Total Chef{% endblock %}
 
 {% block content %}
-    <h2>Delicious Salads</h2>
-    <p>Discover the freshest salads made with love and passion!</p>
+    <!-- Main Image Section -->
+    <div class="home-main-image">
+        <img src="static/images/0G9A0138.jpg" alt="Main Image">
+    </div>
+
+    <!-- Best-Selling Salads Section -->
+    <section class="best-selling">
+        <h2>Best-Selling Salads</h2>
+        <div class="salad-gallery">
+            <div class="salad-item">
+                <img src="static/images/salad1.jpg" alt="Salad 1">
+                <p>Eggplant Salad with Tahini</p>
+            </div>
+            <div class="salad-item">
+                <img src="static/images/salad2.jpg" alt="Salad 2">
+                <p>Tabbouleh Salad</p>
+            </div>
+            <div class="salad-item">
+                <img src="static/images/salad3.jpg" alt="Salad 3">
+                <p>Moroccan Carrot Salad</p>
+            </div>
+            <!-- Add more salad items as needed -->
+        </div>
+    </section>
+
+    <!-- 4 Facts About Total Chef -->
+    <section class="facts-about-total-chef">
+        <h2>4 Facts You May Not Know About Total Chef</h2>
+        <ol>
+            <li>How did I choose the name Total Chef? Besides being "total" in everything I do, the English name "Total Chef" is made from the names of my two eldest children, Tomer and Talya. When we thought of the name, little Heli wasn't born yet.</li>
+            <li>The character in the logo is me.</li>
+            <li>My father, Natan, is responsible for all the salad branding.</li>
+            <li>Every holiday has special offers that are not available all year round.</li>
+        </ol>
+    </section>
 {% endblock %}
