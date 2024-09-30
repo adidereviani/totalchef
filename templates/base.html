@@ -4,21 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{% block title %}{{ 'טוטאל שף' if session.get('language') == 'he' else 'Total Chef' }}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Alef:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
+
 <body>
     <header>
-        <h1>{{ 'טוטאל שף' if session.get('language') == 'he' else 'Total Chef' }}</h1>
+        <!-- Logo should appear on all pages -->
+        <img src="{{ url_for('static', filename='images/logo_total.png') }}" alt="Total Chef Logo" class="logo">
+
+        <!-- Navigation buttons should also appear on all pages -->
         <nav>
-            <ul>
-                <li><a href="{{ url_for('home') }}">{{ 'דף הבית' if session.get('language') == 'he' else 'Home' }}</a></li>
-                <li><a href="{{ url_for('products') }}">{{ 'המוצרים שלנו' if session.get('language') == 'he' else 'My Products' }}</a></li>
-                <li><a href="{{ url_for('points_of_sale') }}">{{ 'נקודות מכירה' if session.get('language') == 'he' else 'Points of Sale' }}</a></li>
-                <li><a href="{{ url_for('contact') }}">{{ 'צור קשר' if session.get('language') == 'he' else 'Contact' }}</a></li>
-                <li><a href="{{ url_for('about') }}">{{ 'אודות' if session.get('language') == 'he' else 'About' }}</a></li>
-                <li><a href="{{ url_for('switch_language', lang='en') }}">English</a> | <a href="{{ url_for('switch_language', lang='he') }}">עברית</a></li>
+            <ul class="nav-buttons">
+                <li><a href="{{ url_for('home') }}" class="nav-button">{{ 'דף הבית' if session.get('language') == 'he' else 'Home' }}</a></li>
+                <li><a href="{{ url_for('products') }}" class="nav-button">{{ 'המוצרים שלנו' if session.get('language') == 'he' else 'Our Products' }}</a></li>
+                <li><a href="{{ url_for('points_of_sale') }}" class="nav-button">{{ 'נקודות מכירה' if session.get('language') == 'he' else 'Points of Sale' }}</a></li>
+                <li><a href="{{ url_for('about') }}" class="nav-button">{{ 'אודות' if session.get('language') == 'he' else 'About' }}</a></li>
+                <li><a href="{{ url_for('contact') }}" class="nav-button">{{ 'צור קשר' if session.get('language') == 'he' else 'Contact' }}</a></li>
+                <!-- Language Switcher -->
+                <li>
+                    <a href="{{ url_for('switch_language', lang='en') }}" class="nav-button">English</a> |
+                    <a href="{{ url_for('switch_language', lang='he') }}" class="nav-button">עברית</a>
+                </li>
             </ul>
         </nav>
+
+        <!-- Only show the banner on the homepage -->
+        {% if request.endpoint == 'home' %}
+        <div class="banner">
+            <div class="banner-text">
+                <h1>{{ 'ברוכים הבאים לסלטי טוטאל שף' if session.get('language') == 'he' else 'Welcome to Total Chef' }}</h1>
+            </div>
+        </div>
+        {% endif %}
     </header>
 
     <main>
@@ -28,7 +46,7 @@
     </main>
 
     <footer>
-        <p>{{ 'כל הזכויות שמורות © 2024 שף טוטאל' if session.get('language') == 'he' else 'All rights reserved © 2024 Total Chef' }}</p>
+        <p>{{ 'כל הזכויות שמורות © 2024 טוטאל שף' if session.get('language') == 'he' else 'All rights reserved © 2024 Total Chef' }}</p>
     </footer>
 </body>
 </html>

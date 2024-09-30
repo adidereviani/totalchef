@@ -4,9 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="added style and update content">
+    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update content">
+      <change afterPath="$PROJECT_DIR$/static/images/carrot.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/crovit_chili.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/green_thini.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/home.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/logo_total.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/marrocan_carrot.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/spanish_eggplant.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/zimizuri.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/טאבולה.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/סלט ביצים.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/0G9A0122.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/home-back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about_he.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about_he.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index_en.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,12 +105,21 @@
       <option name="project" value="LOCAL" />
       <updated>1727164976842</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update content">
+      <option name="closed" value="true" />
+      <created>1727173350767</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1727173350767</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="total chef website" />
     <MESSAGE value="added style and update content" />
-    <option name="LAST_COMMIT_MESSAGE" value="added style and update content" />
+    <MESSAGE value="update content" />
+    <option name="LAST_COMMIT_MESSAGE" value="update content" />
   </component>
 </project>

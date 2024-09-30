@@ -1,30 +1,50 @@
 {% extends "base.html" %}
 
-{% block title %}טוטאל שף - Total Chef{% endblock %}
+{% block title %}טוטאל שף{% endblock %}
 
 {% block content %}
-    <!-- Main Image Section -->
-    <div class="home-main-image">
-        <img src="static/images/0G9A0138.jpg" alt="Main Image">
-    </div>
+
+    <!-- Logo at the top right -->
+    <header>
+        <img src="{{ url_for('static', filename='images/logo_total.png') }}" alt="Total Chef Logo" class="logo">
+    </header>
 
     <!-- Best-Selling Salads Section -->
     <section class="best-selling">
         <h2>הסלטים הנמכרים ביותר</h2>
         <div class="salad-gallery">
             <div class="salad-item">
-                <img src="static/images/salad1.jpg" alt="Salad 1">
-                <p>סלט חצילים בטחינה</p>
+                <img src="{{ url_for('static', filename='images/סלט ביצים.JPG') }}" alt="Salad 1">
+                <p>סלט ביצים</p>
             </div>
             <div class="salad-item">
-                <img src="static/images/salad2.jpg" alt="Salad 2">
-                <p>סלט טבולה</p>
+                <img src="{{ url_for('static', filename='images/טאבולה.JPG') }}" alt="Salad 2">
+                <p>טאבולה</p>
             </div>
             <div class="salad-item">
-                <img src="static/images/salad3.jpg" alt="Salad 3">
-                <p>סלט גזר מרוקאי</p>
+                <img src="{{ url_for('static', filename='images/marrocan_carrot.JPG') }}" alt="Salad 3">
+                <p>גזר מרוקאי</p>
             </div>
-            <!-- Add more salad items as needed -->
+            <div class="salad-item">
+                <img src="{{ url_for('static', filename='images/crovit_chili.JPG') }}" alt="Salad 4">
+                <p>כרובית בצ׳ילי</p>
+            </div>
+            <div class="salad-item">
+                <img src="{{ url_for('static', filename='images/carrot.JPG') }}" alt="Salad 4">
+                <p>גזר מקלות</p>
+            </div>
+            <div class="salad-item">
+                <img src="{{ url_for('static', filename='images/green_thini.JPG') }}" alt="Salad 4">
+                <p>טחינה ירוקה</p>
+            </div>
+            <div class="salad-item">
+                <img src="{{ url_for('static', filename='images/spanish_eggplant.JPG') }}" alt="Salad 4">
+                <p>חציל ספרדי</p>
+            </div>
+            <div class="salad-item">
+                <img src="{{ url_for('static', filename='images/zimizuri.JPG') }}" alt="Salad 4">
+                <p>צ׳מיצ׳ורי</p>
+            </div>
         </div>
     </section>
 
@@ -32,10 +52,11 @@
     <section class="facts-about-total-chef">
         <h2>4 עובדות שאולי לא ידעתם על ״טוטאל שף״</h2>
         <ol>
-            <li>איך בחרתי את השם טוטאל שף? אז מעבר לכך שאני טוטאלית בכל מה שאני עושה, השם באנגלית מורכב מהשמות של שני ילדיי הבכורים תומר וטליה. כשחשבנו על השם, הילי הקטנה עוד לא נולדה.</li>
+            <li>איך בחרתי את השם ״טוטאל שף״? אז מעבר לכך שאני טוטאלית בכל מה שאני עושה, השם באנגלית מורכב מהשמות של שני ילדיי הבכורים: תומר וטליה. כשחשבנו על השם, הילי הקטנה עוד לא נולדה.</li>
             <li>הדמות בלוגו היא אני.</li>
             <li>אבא שלי, נתן, אחראי על כל המיתוג של הסלטים.</li>
             <li>בכל חג ישנם ספיישלים מיוחדים שלא ניתן להשיג לאורך כל השנה.</li>
         </ol>
     </section>
+
 {% endblock %}
