@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the 4 facts">
+    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the 4 facts and main background shadow">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/marrocan_carrot.JPG" beforeDir="false" afterPath="$PROJECT_DIR$/static/images/moroccan_carrot.JPG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index_en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products_en.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/products_he.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products_he.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727682264085</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="update the 4 facts and main background shadow">
+      <option name="closed" value="true" />
+      <created>1727682834483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727682834483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -123,6 +135,7 @@
     <MESSAGE value="update content" />
     <MESSAGE value="update new website style" />
     <MESSAGE value="update the 4 facts" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the 4 facts" />
+    <MESSAGE value="update the 4 facts and main background shadow" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the 4 facts and main background shadow" />
   </component>
 </project>

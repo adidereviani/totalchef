@@ -4,5 +4,41 @@
 
 {% block content %}
     <h2>המוצרים שלנו</h2>
-    <p>גלו את מבחר הסלטים הטריים והטעימים שלנו!</p>
+    <p>בטוטאל שף אנחנו מציעים מגוון רחב של סלטים טריים המתאימים לכל אירוע. הנה כמה מהמוצרים הטעימים שלנו:</p>
+
+    <!-- Salads Gallery Section -->
+    <section class="salad-gallery">
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/egg_salad.JPG') }}" alt="Salad 1">
+            <p>סלט ביצים</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/tabula.JPG') }}" alt="Salad 2">
+            <p>טאבולה</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/moroccan_carrot.JPG') }}" alt="Salad 3">
+            <p>גזר מרוקאי</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/crovit_chili.JPG') }}" alt="Salad 4">
+            <p>כרובית בצ'ילי</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/carrot.JPG') }}" alt="Salad 5">
+            <p>מקלות גזר</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/green_thini.JPG') }}" alt="Salad 6">
+            <p>טחינה ירוקה</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/spanish_eggplant.JPG') }}" alt="Salad 7">
+            <p>חציל ספרדי</p>
+        </div>
+        <div class="salad-item">
+            <img src="{{ url_for('static', filename='images/zimizuri.JPG') }}" alt="Salad 8">
+            <p>צ'ימיצ'ורי</p>
+        </div>
+    </section>
 {% endblock %}

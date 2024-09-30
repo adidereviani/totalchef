@@ -3,39 +3,60 @@
 {% block title %}Total Chef{% endblock %}
 
 {% block content %}
-<!--    &lt;!&ndash; Main Image Section &ndash;&gt;-->
-<!--    <div class="home-main-image">-->
-<!--        <img src="static/images/home-back.jpg" alt="Main Image">-->
-<!--    </div>-->
 
-    <!-- Best-Selling Salads Section -->
-    <section class="best-selling">
-        <h2>Best-Selling Salads</h2>
-        <div class="salad-gallery">
-            <div class="salad-item">
-                <img src="static/images/סלט ביצים.JPG" alt="Salad 1">
-                <p>Eggs Salad</p>
-            </div>
-            <div class="salad-item">
-                <img src="static/images/טאבולה.JPG" alt="Salad 2">
-                <p>Tabbouleh Salad</p>
-            </div>
-            <div class="salad-item">
-                <img src="static/images/גזר_מרוקאי.JPG" alt="Salad 3">
-                <p>Moroccan Carrot Salad</p>
-            </div>
-            <!-- Add more salad items as needed -->
-        </div>
-    </section>
+ <!-- Logo at the top right -->
+ <header>
+     <img src="{{ url_for('static', filename='images/logo_total.png') }}" alt="Total Chef Logo" class="logo">
+ </header>
 
-    <!-- 4 Facts About Total Chef -->
-    <section class="facts-about-total-chef">
-        <h2>4 Facts You May Not Know About Total Chef</h2>
-        <ol>
-            <li>How did I choose the name Total Chef? Besides being "Total" in everything I do, the English name "Total Chef" is made from the names of my two eldest children, Tomer and Talya. When we thought of the name, little Heli wasn't born yet.</li>
-            <li>The character in the logo is me.</li>
-            <li>My father, Natan, is responsible for all the salad branding.</li>
-            <li>Every holiday has special offers that are not available all year round.</li>
-        </ol>
-    </section>
+ <!-- Best-Selling Salads Section -->
+ <section class="best-selling">
+     <h2>Best-Selling Salads</h2>
+     <div class="salad-gallery">
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/egg_salad.JPG') }}" alt="Salad 1">
+             <p>Egg Salad</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/tabula.JPG') }}" alt="Salad 2">
+             <p>Tabbouleh Salad</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/moroccan_carrot.JPG') }}" alt="Salad 3">
+             <p>Moroccan Carrot</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/crovit_chili.JPG') }}" alt="Salad 4">
+             <p>Cauliflower in Chili</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/carrot.JPG') }}" alt="Salad 5">
+             <p>Carrot Sticks</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/green_thini.JPG') }}" alt="Salad 6">
+             <p>Green Tahini</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/spanish_eggplant.JPG') }}" alt="Salad 7">
+             <p>Spanish Eggplant</p>
+         </div>
+         <div class="salad-item">
+             <img src="{{ url_for('static', filename='images/zimizuri.JPG') }}" alt="Salad 8">
+             <p>Chimichurri</p>
+         </div>
+     </div>
+ </section>
+
+ <!-- 4 Facts About Total Chef -->
+ <section class="facts-about-total-chef">
+     <h2>4 Facts You May Not Know About Total Chef</h2>
+     <ol>
+         <li>How did I choose the name 'Total Chef'? Beyond being total in all I do, the name combines my two eldest children's names, Tomer and Talia, before little Hili was born.</li>
+         <li>The character in the logo is me.</li>
+         <li>My father, Natan, is responsible for all the branding of the salads.</li>
+         <li>There are special salads available only during holidays.</li>
+     </ol>
+ </section>
+
 {% endblock %}
