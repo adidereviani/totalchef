@@ -38,7 +38,7 @@ body[dir="ltr"] {
     justify-content: center;
     color: white;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: multiply;
 }
 
@@ -164,7 +164,7 @@ body[dir="rtl"] .salad-item p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
     z-index: 1;
 }
 
@@ -178,17 +178,24 @@ body[dir="rtl"] .facts-about-total-chef ol {
     text-align: right;
 }
 
-.facts-about-total-chef li {
-    margin-bottom: 15px;
+/* Remove the counter from ordered list */
+.facts-about-total-chef ol {
+    list-style-type: none; /* Remove the default numbers */
+    padding-left: 0; /* Remove left padding */
 }
 
+/* Spacing for each list item */
 .facts-about-total-chef li {
+    margin-bottom: 15px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .facts-about-total-chef li:hover {
-    transform: translateY(-5px); /* Slight lift */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.facts-about-total-chef h2 {
+    margin-bottom: 20px; /* Add space below the heading */
 }
 
 /* Footer */
