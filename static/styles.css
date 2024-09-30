@@ -148,23 +148,30 @@ body[dir="rtl"] .salad-item p {
 
 /* Facts Section */
 .facts-about-total-chef {
-    background-color: #e8f5e9;
-    padding: 40px 20px;
+    background-image: url('images/0G9A0138.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    color: white;
     text-align: center;
+    position: relative;
 }
 
-.facts-about-total-chef h2 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+.facts-about-total-chef:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
 
+.facts-about-total-chef h2,
 .facts-about-total-chef ol {
-    text-align: right;
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    padding: 0 20px;
+    position: relative;
+    z-index: 2;
 }
 
 body[dir="rtl"] .facts-about-total-chef ol {
@@ -173,6 +180,15 @@ body[dir="rtl"] .facts-about-total-chef ol {
 
 .facts-about-total-chef li {
     margin-bottom: 15px;
+}
+
+.facts-about-total-chef li {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facts-about-total-chef li:hover {
+    transform: translateY(-5px); /* Slight lift */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
 }
 
 /* Footer */
