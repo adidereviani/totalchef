@@ -10,8 +10,10 @@
 
 <body>
     <header>
-        <!-- Logo should appear on all pages -->
-        <img src="{{ url_for('static', filename='images/logo_total.png') }}" alt="Total Chef Logo" class="logo">
+        <!-- Logo should appear on all pages and be clickable -->
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='images/logo_total.png') }}" alt="Total Chef Logo" class="logo">
+        </a>
 
         <!-- Navigation buttons should also appear on all pages -->
         <nav>

@@ -49,7 +49,7 @@ body[dir="ltr"] {
 }
 
 .banner-text h1 {
-    font-size: 4rem;
+    font-size: 4vw; /* Make headings responsive using viewport width */
     margin: 0;
     font-family: 'Amatic SC', cursive;
     text-align: center;
@@ -74,6 +74,29 @@ h2, h3, h4, h5, h6, p, ol, ul, li, a {
     background-color: #ffffff;
     padding: 38px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative; /* To make the logo part of this box */
+}
+
+/* Logo styling */
+/* Logo styling */
+.logo {
+    position: absolute;
+    top: 0px; /* Adjust this value to position the logo above the nav-buttons */
+    right: 20px;
+    width: 100px;
+    height: auto;
+    z-index: 10; /* Ensure the logo is above other elements */
+}
+
+/* Make header position relative */
+header {
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .logo {
+        display: none; /* Hide the logo for smaller screens */
+    }
 }
 
 .nav-buttons li {
@@ -83,13 +106,14 @@ h2, h3, h4, h5, h6, p, ol, ul, li, a {
 .nav-button {
     background-color: #2F4F4F;
     color: white;
-    padding: 8px 20px;
+    padding: 0.5rem 1.5rem; /* Use rem for padding */
     border-radius: 10px;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1rem; /* Responsive font size */
     text-align: center;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-width: 100px; /* Ensure buttons have a minimum width */
 }
 
 .nav-button:hover {
@@ -97,9 +121,16 @@ h2, h3, h4, h5, h6, p, ol, ul, li, a {
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+    .nav-button {
+        padding: 0.3rem 1rem; /* Shrink padding for smaller screens */
+        font-size: 0.9rem; /* Shrink font size for smaller screens */
+    }
+}
+
 /* Best-Selling Salads Section */
 .best-selling {
-    padding: 40px 20px;
+    padding: 4rem 2rem; /* Use rem for padding */
     background-color: #fff;
     text-align: center;
 }
@@ -200,6 +231,36 @@ body[dir="rtl"] .facts-about-total-chef ol {
     margin-bottom: 20px; /* Add space below the heading */
 }
 
+/* About Section with Image on the Right */
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2vw; /* Use responsive gap */
+    margin: 40px 0;
+    flex-direction: row-reverse; /* Ensures the image is on the right */
+    justify-content: center; /* Center the container */
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-text {
+    flex: 1;
+    text-align: center; /* Center the text */
+}
+
+.about-text h2 {
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 0; /* Remove margin between paragraphs */
+    line-height: 1.2; /* Adjust line height for tighter spacing */
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -209,22 +270,34 @@ footer {
     font-family: 'Alef', sans-serif;
 }
 
-/* Logo styling */
-.logo {
-    position: absolute;
-    top: 11px;
-    right: 20px;
-    width: 100px;
-    height: auto;
+@media (max-width: 768px) {
+    .salad-item {
+        width: 100%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-image img {
+        width: 100%;
+    }
 }
 
-@media (max-width: 768px) {
-    .logo {
-        width: 80px;
+@media (max-width: 1024px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .salad-gallery {
+        gap: 20px;
+        flex-wrap: wrap;
     }
 
     .salad-item {
-        width: 100%;
+        width: 45%; /* Shrink salad items for tablet size */
     }
 }
 
@@ -234,7 +307,11 @@ footer {
     }
 
     .banner-text h1 {
-        font-size: 2rem;
+        font-size: 2rem; /* Adjust for smaller screens */
+    }
+
+    .best-selling {
+        padding: 2rem 1rem; /* Reduce padding for smaller screens */
     }
 
     .salad-gallery {
@@ -243,7 +320,7 @@ footer {
     }
 
     .salad-item {
-        width: 100%;
+        width: 100%; /* Full width for mobile screens */
     }
 
     .facts-about-total-chef ol {

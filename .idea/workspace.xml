@@ -4,37 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the English products">
-      <change afterPath="$PROJECT_DIR$/static/images/arisa.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/avocado.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/califlower_in_chili.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/califlower_thini.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/carrot_maklot.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/colselo.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/eggplant_natural.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/eggplant_with_mayo.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/eggplant_with_thini.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/eggs_salads.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/garlic.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/grandma_salad.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/green_schog.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/homemade_hamozim.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/hot_pepper.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/matbuha.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/morrocan_carrots.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/plain_thini.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/purple_cabbage.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/purple_cabbage_with_mayo.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/scordelia.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/selek.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/spanish_eggplants.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/tabula_salad.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/thini_green.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/tiziki.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/white_cabbage.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/images/zimisuri.JPG" afterDir="false" />
+    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the images products">
+      <change afterPath="$PROJECT_DIR$/static/images/0G9A9981.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about_he.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about_he.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/contact_he.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact_he.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/products_en.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products_en.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/products_he.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/products_he.html" afterDir="false" />
     </list>
@@ -160,7 +137,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727686433301</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update the images products">
+      <option name="closed" value="true" />
+      <created>1727689822677</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1727689822678</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -171,6 +156,7 @@
     <MESSAGE value="update the 4 facts" />
     <MESSAGE value="update the 4 facts and main background shadow" />
     <MESSAGE value="update the English products" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the English products" />
+    <MESSAGE value="update the images products" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the images products" />
   </component>
 </project>
