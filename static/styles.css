@@ -78,7 +78,6 @@ h2, h3, h4, h5, h6, p, ol, ul, li, a {
 }
 
 /* Logo styling */
-/* Logo styling */
 .logo {
     position: absolute;
     top: 0px; /* Adjust this value to position the logo above the nav-buttons */
@@ -270,6 +269,104 @@ footer {
     font-family: 'Alef', sans-serif;
 }
 
+/* Points of Sale Section */
+.sales-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 20px 0;
+}
+
+.sales-description {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2rem;
+}
+
+/* Search Bar Styling */
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    position: relative;
+    width: 100%;
+    margin-top: 40px; /* Add top margin */
+}
+
+#searchBar {
+    width: 50%; /* Increase the width of the search bar */
+    padding: 15px; /* Increase padding for a larger look */
+    font-size: 1.2rem; /* Make the text larger */
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+    outline: none;
+    transition: box-shadow 0.3s ease; /* Add smooth transition effect */
+    text-align: center; /* Center the placeholder text */
+}
+
+#searchBar:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Bigger shadow on focus */
+}
+
+.magnifying-glass {
+    position: absolute;
+    right: 72%; /* Align the icon inside the input box */
+    font-size: 1.5rem;
+    color: #888;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Perfect vertical centering */
+}
+
+/* Grid layout for sales points */
+.sales-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid */
+    gap: 20px;
+    padding: 20px;
+    justify-items: center; /* Center cards */
+}
+
+/* Styling for each card */
+.sales-card {
+    background-color: #f9f5ee; /* Light background */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    width: 100%;
+    max-width: 300px; /* Control card width */
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sales-card:hover {
+    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+/* Header for each card */
+.sales-card-header {
+    background-color: #ffffff;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Body content of the card */
+.sales-card-body {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+}
+
+.sales-card-body p {
+    margin: 10px 0 0;
+}
+
 @media (max-width: 768px) {
     .salad-item {
         width: 100%;
@@ -282,6 +379,10 @@ footer {
 
     .about-image img {
         width: 100%;
+    }
+
+    .sales-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
 
