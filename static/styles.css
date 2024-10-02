@@ -456,3 +456,59 @@ footer {
     font-size: 1.1rem; /* Increase paragraph font size on the about page */
     margin-bottom: 15px; /* Add space between paragraphs */
 }
+
+/* Contact Page Styling */
+.contact-page {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-page h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-page p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+/* Contact Details Styling */
+.contact-details {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-details li {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.contact-details li i {
+    margin-right: 10px;
+    color: #333;
+}
+
+/* Social Links Styling */
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links li a {
+    font-size: 3rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-links li a:hover {
+    color: #1877F2;
+}
