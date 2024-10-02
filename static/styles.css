@@ -460,12 +460,17 @@ footer {
 /* Contact Page Styling */
 .contact-page {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 .contact-page h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+}
+
+.contact-page h3 {
+    font-size: 1.5rem;
+    margin-bottom: 30px; /* Add space between heading and icons */
 }
 
 .contact-page p {
@@ -497,6 +502,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 30px;
+    margin-bottom: 40px; /* Space between icons and footer */
 }
 
 .social-links li {
@@ -504,11 +510,63 @@ footer {
 }
 
 .social-links li a {
-    font-size: 3rem;
-    color: #333;
-    transition: color 0.3s ease;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: white;
+    transition: transform 0.3s ease;
+    display: block; /* Removes white line under icons */
+    background-color: transparent;
 }
 
+/* Facebook Icon */
+.social-links li a.icon-facebook {
+    background-color: #3b5998;
+}
+
+.social-links li a.icon-facebook:hover {
+    background-color: #2d4373;
+}
+
+/* Instagram Icon */
+.social-links li a.icon-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.social-links li a.icon-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #e8b23d 0%, #e86f5a 45%, #c03589 60%, #244AC9 90%);
+}
+
+/* Phone Icon */
+.social-links li a.icon-phone {
+    background-color: #007BFF;
+}
+
+.social-links li a.icon-phone:hover {
+    background-color: #0056b3;
+}
+
+/* WhatsApp Icon */
+.social-links li a.icon-whatsapp {
+    background-color: #25D366;
+}
+
+.social-links li a.icon-whatsapp:hover {
+    background-color: #20b954;
+}
+
+/* Hover Effect for all Icons */
 .social-links li a:hover {
-    color: #1877F2;
+    transform: scale(1.1);
+}
+
+/* Add space between text and footer */
+.contact-page {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px; /* Space between social links and footer */
 }

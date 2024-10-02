@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the about pages">
+    <list default="true" id="920aa698-94a7-4535-870e-ff05139fa489" name="Changes" comment="update the contact page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
@@ -189,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727856790797</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update the contact page">
+      <option name="closed" value="true" />
+      <created>1727858768803</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727858768803</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -206,6 +214,7 @@
     <MESSAGE value="update the points of sales and products title h1, h2" />
     <MESSAGE value="update the products English version" />
     <MESSAGE value="update the about pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="update the about pages" />
+    <MESSAGE value="update the contact page" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the contact page" />
   </component>
 </project>
