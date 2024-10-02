@@ -1,8 +1,375 @@
 {% extends "base.html" %}
 
-{% block title %}Points of Sale - Total Chef{% endblock %}
+{% block title %}Sales Points - Total Chef{% endblock %}
 
 {% block content %}
-    <h2>Points of Sale</h2>
-    <p>Find the nearest stores where you can purchase our salads.</p>
+    <h2 class="sales-title">Sales Points</h2>
+    <p class="sales-description">Find the nearest sales points where you can purchase our salads:</p>
+
+    <!-- Search Bar with Magnifying Glass -->
+    <div class="search-container">
+        <input type="text" id="searchBar" onkeyup="searchLocations()" placeholder="Search by city, store name, or address...">
+        <span class="magnifying-glass">🔍</span>
+    </div>
+
+    <section class="sales-grid" id="salesGrid">
+        <!-- Locations sorted by Alphabet -->
+
+        <!-- Givat Shmuel -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Givat Shmuel - Zelda</span>
+            </div>
+            <div class="sales-card-body">
+                <p>73 HaNasi St.</p>
+            </div>
+        </div>
+
+        <!-- Givatayim -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Givatayim - Givatayim Butcher</span>
+            </div>
+            <div class="sales-card-body">
+                <p>15 Sirkin St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Givatayim - Gan Pri VeYerek</span>
+            </div>
+            <div class="sales-card-body">
+                <p>21 Weizmann St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Givatayim - The Kohanim Bakery</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Korzyn Center</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Givatayim - HaTahana</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Friendly Complex</p>
+            </div>
+        </div>
+
+        <!-- Ganei Tikva -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Ganei Tikva - Aharoni's</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Zim Urban Center</p>
+            </div>
+        </div>
+
+        <!-- Herzliya -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Herzliya - Meat Point Butcher</span>
+            </div>
+            <div class="sales-card-body">
+                <p>3 Abba Eban St.</p>
+            </div>
+        </div>
+
+        <!-- Hasharon Region -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Bostan Kadima Zoran</span>
+            </div>
+            <div class="sales-card-body">
+                <p>1 Ha'Ofe St., Kadima Zoran</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Ha'bite Deli</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Bitan Aharon</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Dandy Harutzim</span>
+            </div>
+            <div class="sales-card-body">
+                <p>9 Ha'Arava St., Harutzim</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Dandy Rishpon</span>
+            </div>
+            <div class="sales-card-body">
+                <p>12 Ha'Prachim St., Rishpon</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Meatology</span>
+            </div>
+            <div class="sales-card-body">
+                <p>96 Ramataim St., Hod Hasharon</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - Super Star of Hasharon</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Ra'anana</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - HaTahana Hod Hasharon</span>
+            </div>
+            <div class="sales-card-body">
+                <p>40 Sokolov St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Hasharon - HaTahana Ramat Hasharon</span>
+            </div>
+            <div class="sales-card-body">
+                <p>61 Usishkin St.</p>
+            </div>
+        </div>
+
+        <!-- Jerusalem -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Jerusalem - Ivo</span>
+            </div>
+            <div class="sales-card-body">
+                <p>7 Shamai St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Jerusalem - Super Ha'Moshava</span>
+            </div>
+            <div class="sales-card-body">
+                <p>43 Emek Refaim St.</p>
+            </div>
+        </div>
+
+        <!-- Neve Monson -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Neve Monson - Drazi Meat Delicacies</span>
+            </div>
+            <div class="sales-card-body">
+                <p>1 Pninim St.</p>
+            </div>
+        </div>
+
+        <!-- Petach Tikva -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Petach Tikva - Bostan</span>
+            </div>
+            <div class="sales-card-body">
+                <p>63 Ha'Atzmaut St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Petach Tikva - Yosef Fish</span>
+            </div>
+            <div class="sales-card-body">
+                <p>104 Ha'Atzmaut St.</p>
+            </div>
+        </div>
+
+        <!-- Rehovot -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Rehovot - Meshak Basar</span>
+            </div>
+            <div class="sales-card-body">
+                <p>1 Ha'Aluf Yaakov Perry St.</p>
+            </div>
+        </div>
+
+        <!-- Tel Aviv -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Abu Hilawa</span>
+            </div>
+            <div class="sales-card-body">
+                <p>G Center, North Star</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Ba Li Shuk</span>
+            </div>
+            <div class="sales-card-body">
+                <p>12 Marcel Janco St., Hadar Yosef</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Babula</span>
+            </div>
+            <div class="sales-card-body">
+                <p>112 Ibn Gabirol St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Bat HaKatzav</span>
+            </div>
+            <div class="sales-card-body">
+                <p>43 Brodetsky St., Ramat Aviv</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Bostan HaShchuna</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Gan Ha'Ir</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Bostan HaShchuna</span>
+            </div>
+            <div class="sales-card-body">
+                <p>108 Jabotinsky St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Bostan HaShchuna</span>
+            </div>
+            <div class="sales-card-body">
+                <p>71 Tzahal St., Tzahala</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Basar Neto</span>
+            </div>
+            <div class="sales-card-body">
+                <p>1 Yehuda Maccabi St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Zlayet Fish</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Tel Aviv Towers, Nachalat Yitzhak</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Deli Pincas</span>
+            </div>
+            <div class="sales-card-body">
+                <p>31 Pincas St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - HaTahana</span>
+            </div>
+            <div class="sales-card-body">
+                <p>3 Lea Goldberg St., Afeka</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Oppenheimer Butcher</span>
+            </div>
+            <div class="sales-card-body">
+                <p>Oppenheimer Center</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Shenkin Butcher</span>
+            </div>
+            <div class="sales-card-body">
+                <p>56 Shenkin St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Shuk HaAliya</span>
+            </div>
+            <div class="sales-card-body">
+                <p>88 HaHashmonaim St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Boutique Butcher Barzani</span>
+            </div>
+            <div class="sales-card-body">
+                <p>4 Barzani St.</p>
+            </div>
+        </div>
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Tel Aviv - Hadar Yosef Market</span>
+            </div>
+            <div class="sales-card-body">
+                <p>64 Kehilat Lodge St.</p>
+            </div>
+        </div>
+
+        <!-- Kiryat Ono -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Kiryat Ono - HaTahana</span>
+            </div>
+            <div class="sales-card-body">
+                <p>9 HaDovdevan St.</p>
+            </div>
+        </div>
+
+        <!-- Haifa -->
+        <div class="sales-card">
+            <div class="sales-card-header">
+                <span>📍 Haifa - HaTahana</span>
+            </div>
+            <div class="sales-card-body">
+                <p>125 HaNasi Blvd.</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function searchLocations() {
+            var input, filter, cards, cardContainer, header, body, i, txtValueHeader, txtValueBody;
+            input = document.getElementById("searchBar");
+            filter = input.value.toUpperCase();
+            cardContainer = document.getElementById("salesGrid");
+            cards = cardContainer.getElementsByClassName("sales-card");
+            for (i = 0; i < cards.length; i++) {
+                header = cards[i].getElementsByClassName("sales-card-header")[0];
+                body = cards[i].getElementsByClassName("sales-card-body")[0];
+                txtValueHeader = header.textContent || header.innerText;
+                txtValueBody = body.textContent || body.innerText;
+                if (txtValueHeader.toUpperCase().indexOf(filter) > -1 || txtValueBody.toUpperCase().indexOf(filter) > -1) {
+                    cards[i].style.display = "";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 {% endblock %}
