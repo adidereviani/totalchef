@@ -441,3 +441,18 @@ footer {
         font-size: 1rem;
     }
 }
+
+/* Specific styles for the About page */
+.about-page {
+    text-align: center; /* Align text to center only on the about page */
+}
+
+.about-page h2, .about-page h1, .about-page h3, .about-page h4, .about-page h5, .about-page h6 {
+    font-size: 2.5rem; /* Increase font size for titles on the about page */
+    margin-bottom: 15px; /* Add space between titles and paragraphs */
+}
+
+.about-page p {
+    font-size: 1.1rem; /* Increase paragraph font size on the about page */
+    margin-bottom: 15px; /* Add space between paragraphs */
+}
