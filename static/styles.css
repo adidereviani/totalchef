@@ -459,8 +459,41 @@ footer {
 
 /* Contact Page Styling */
 .contact-page {
+    position: relative;
+    background-image: url('images/contact.jpg');
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    margin-top: 50px;
+    padding-top: 20px; /* Extend the image upward */
+    padding-bottom: 20px; /* Extend the image downward */
+    margin-top: 0; /* Remove margin on top to extend fully */
+    z-index: 1;
+    color: white; /* Change text color to white */
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3); /* Darken the background image */
+    z-index: -1; /* Ensure the overlay is behind the content */
+}
+
+/* Add a box around the content */
+.contact-box {
+    background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black background */
+    padding: 40px; /* Add padding inside the box */
+    display: inline-block; /* Ensure the box sizes to the content */
+    border-radius: 20px; /* Rounded corners for a smoother look */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); /* Add a shadow for depth */
+}
+
+/* Ensure the text inside the box remains white */
+.contact-box h2, .contact-box h3, .contact-box p, .contact-details li {
+    color: white;
 }
 
 .contact-page h2 {
@@ -492,7 +525,7 @@ footer {
 
 .contact-details li i {
     margin-right: 10px;
-    color: #333;
+    color: white; /* Change icon color to white */
 }
 
 /* Social Links Styling */
